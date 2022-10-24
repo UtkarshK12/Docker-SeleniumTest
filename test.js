@@ -12,7 +12,7 @@ async function googleSearch() {
     await driver.get("https://www.google.com");
     await driver
       .findElement(By.name("q"))
-      .sendKeys("nahipachi", Key.ENTER);
+      .sendKeys("utkarsh", Key.ENTER);
 
     let firstResult = await driver.wait(
       until.elementLocated(By.css("h3")),
